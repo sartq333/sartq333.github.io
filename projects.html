@@ -1,0 +1,28 @@
+<div class="content">
+    <h1>My Projects</h1>
+    <div class="links">
+        <a href="https://github.com/sartq333/story-GPT">storyGPT</a>
+        <a href="https://github.com/sartq333/chill-guy-maker">chillGuy maker</a>
+        <a href="https://github.com/sartq333/rag-llama2">RAG using llama2</a>
+        <a href="https://github.com/sartq333/Facial-Keypoint-Detection">Facial Keypoint Detection</a>
+    </div>
+</div>
+
+<script>
+    function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            document.documentElement.setAttribute('data-theme', 
+                currentTheme === 'dark' ? 'light' : 'dark'
+            );
+            // Optional: Save theme preference in localStorage
+            localStorage.setItem('theme', currentTheme === 'dark' ? 'light' : 'dark');
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        });
+</script>
